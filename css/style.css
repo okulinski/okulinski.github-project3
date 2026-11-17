@@ -1,0 +1,145 @@
+/* Shared Style */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 1rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Home Page -- Fluid Layout using percentages */
+
+/* Style 1 */
+.home-page h1,
+.home-page h2,
+.home-page h3 {
+  color: #2e003e;
+  font-family: "Galada", cursive;
+  font-weight: bold;
+}
+
+/* Style 2 */
+.home-page p {
+  color: rgb(42, 0, 58);
+  font-family: "Galada", cursive;
+  line-height: 2;
+}
+
+/* Style 3 */
+.home-page img {
+  border-radius: 8px;
+  opacity: 0.8;
+  width: 60%;
+  height: auto;
+}
+
+/* Style 4 */
+.home-page {
+  background-color: #d1affa !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Style 5 */
+.destinations {
+  font-family: "Galada", cursive;
+  width: 90%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.home-page h4 {
+  margin-left: 5%;
+  font-family: "Tangerine", cursive;
+  font-size: 40px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* ==========================================
+   Career Page (Fixed Layout using pixels)
+   ========================================== */
+
+/* Style 1 */
+.career-page h1,
+.career-page h2,
+.career-page h3 {
+  color: #001a83;
+  font-weight: bold;
+}
+
+/* Style 2 */
+.career-page .page-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+}
+
+/* Style 3 */
+.career-page p {
+  color: black;
+  line-height: 2;
+}
+
+/* Style 4 (Removed fixed width from body so header can span full screen) */
+body.career-page {
+  /* Empty or used for background color only */
+}
+
+/* Style 5 */
+.career-page {
+  background-color: #b6d5ff !important;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* ==========================================
+   Resume Page (Fixed Layout using pixels)
+   ========================================== */
+
+/* Style 1 */
+.resume-page h1,
+.resume-page h2,
+.resume-page h3 {
+  color: #4f1c00;
+  font-weight: bold;
+}
+
+/* Style 2 */
+.resume-page .page-wrapper {
+  width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Style 3 */
+.resume-page p {
+  color: black;
+  line-height: 2;
+}
+
+/* Style 4 (Removed fixed width from body) */
+body.resume-page {
+  /* Empty or used for background color only */
+}
+
+/* Style 5 */
+.resume-page {
+  background-color: #ffd5b2 !important;
+  font-family: 'Times New Roman', Times, serif;
+}
