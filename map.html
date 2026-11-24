@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Map</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <script src="https://maps/googleapis.com/maps/api/js?AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"
-    async defer></script>
-  </head>
-  <body>
-    <header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBM1F-BpX660SBK3-Vw9O9f7AEvTAIH8rI&callback=initMap"></script>
+</head>
+<body class="map-page">
+  <header>
     <nav>
       <ul>
         <li><a href="index.html">Home Page</a></li>
@@ -20,16 +22,12 @@
       </ul>
     </nav>
   </header>
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center : {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-    </script>
 
-  </body>
+  <main>
+    <h1>My Map</h1>
+    <button id="trafficBtn" type="button">Toggle Traffic</button>
+    <button id="questionsBtn" type="button">Questions</button>
+    <div id="map"></div>
+  </main>
+</body>
 </html>

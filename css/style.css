@@ -140,6 +140,19 @@ body.resume-page {
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* Map Page */
+.map-page {
+  background-color: #e6f4ea;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#map {
+  width: 90%;
+  height: 500px;
+  margin: 1rem auto;
+}
+
+
 /* Media Query 1: Tablet (601px to 1024px) */
 @media (min-width: 601px) and (max-width: 1024px) {
 
