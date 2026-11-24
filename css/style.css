@@ -64,6 +64,7 @@ img {
   padding: 2rem;
 }
 
+
 .home-page h4 {
   margin-left: 5%;
   font-family: "Tangerine", cursive;
@@ -72,9 +73,7 @@ img {
   font-style: normal;
 }
 
-/* ==========================================
-   Career Page (Fixed Layout using pixels)
-   ========================================== */
+/* Career Page (Fixed Layout using pixels) */
 
 /* Style 1 */
 .career-page h1,
@@ -97,9 +96,9 @@ img {
   line-height: 2;
 }
 
-/* Style 4 (Removed fixed width from body so header can span full screen) */
+/* Style 4 */
 body.career-page {
-  /* Empty or used for background color only */
+
 }
 
 /* Style 5 */
@@ -108,9 +107,7 @@ body.career-page {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* ==========================================
-   Resume Page (Fixed Layout using pixels)
-   ========================================== */
+/* Resume Page (Fixed Layout using pixels) */
 
 /* Style 1 */
 .resume-page h1,
@@ -133,13 +130,54 @@ body.career-page {
   line-height: 2;
 }
 
-/* Style 4 (Removed fixed width from body) */
+/* Style 4 */
 body.resume-page {
-  /* Empty or used for background color only */
 }
 
 /* Style 5 */
 .resume-page {
   background-color: #ffd5b2 !important;
   font-family: 'Times New Roman', Times, serif;
+}
+
+/* Media Query 1: Tablet (601px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+  /* Change 1: Larger images so they don't look small */
+  .home-page img {
+    width: 75%;
+  }
+
+  /* Change 2: Less padding on the destinations section */
+  .destinations {
+    padding: 1rem;
+  }
+
+  /* Change 3: Slightly smaller heading */
+  .home-page h4 {
+    font-size: 34px;
+  }
+}
+
+/* Media Query 2: Phone (up to 600px) */
+@media (min-width: 0px) and (max-width: 600px) {
+
+  /* Change 1: Stack the nav links vertically */
+  .home-page nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  /* Change 2: Images fill most of the screen */
+  .home-page img {
+    width: 95%;
+  }
+
+  /* Change 3: Smaller, centered heading with no side margin */
+  .home-page h4 {
+    font-size: 28px;
+    margin-left: 0;
+    text-align: center;
+  }
 }
