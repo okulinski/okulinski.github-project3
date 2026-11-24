@@ -1,6 +1,6 @@
 "use strict";
 
-/* ---------- Questions button (safe on any page) ---------- */
+/* Questions button  */
 const questionsBtn = document.getElementById("questionsBtn");
 if (questionsBtn) {
   questionsBtn.addEventListener("click", function () {
@@ -8,7 +8,7 @@ if (questionsBtn) {
   });
 }
 
-/* ---------- Google Map ---------- */
+/* Google Map */
 function initMap() {
   const mapEl = document.getElementById("map");
   if (!mapEl || !window.google) {
